@@ -208,7 +208,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 2, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -705,7 +705,7 @@ GameObject:
   - component: {fileID: 1035980827}
   - component: {fileID: 1035980826}
   m_Layer: 0
-  m_Name: Idle (32x32)_0
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -737,7 +737,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1035980824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -837,7 +837,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008022308, y: -0.10429007}
+  m_Offset: {x: -0.008022308, y: -0.08319229}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -848,7 +848,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8235092, y: 0.8235096}
+  m_Size: {x: 0.8235092, y: 0.781314}
   m_EdgeRadius: 0
 --- !u!114 &1035980827
 MonoBehaviour:
@@ -862,7 +862,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eff42bbc6b463284cbafd45bef36495e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  moveSpeed: 250
+  jumpForce: 300
+  isJumping: 0
   rb: {fileID: 1035980823}
 --- !u!1 &1362029315
 GameObject:
