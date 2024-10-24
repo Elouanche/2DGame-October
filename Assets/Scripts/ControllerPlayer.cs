@@ -15,6 +15,8 @@ public class ControllerPlayer : MonoBehaviour
     public Transform groundCheckRight;
 
     public Rigidbody2D rb;
+    public Animator animator;
+
     private Vector3 velocity = Vector3.zero;
 
     // Start is called before the first frame update
@@ -36,6 +38,9 @@ public class ControllerPlayer : MonoBehaviour
         }
 
         MovePlayer(horizontalMovement);
+
+        float characterVelocity = Mathf.Abs(rb.velocity.x);
+        animator.SetFloat("Speed", characterVelocity);
     }
 
     void MovePlayer(float _horizontalMovement)

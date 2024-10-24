@@ -901,6 +901,7 @@ MonoBehaviour:
   groundCheckLeft: {fileID: 923810889}
   groundCheckRight: {fileID: 1831165629}
   rb: {fileID: 1035980823}
+  animator: {fileID: 1035980828}
 --- !u!95 &1035980828
 Animator:
   serializedVersion: 5
