@@ -7,7 +7,12 @@ public class ControllerPlayer : MonoBehaviour
     public float moveSpeed;
     public float jumpForce;
 
-    public bool isJumping = false;
+
+    private bool isJumping;
+    private bool isGrounded;
+
+    public Transform groundCheckLeft;
+    public Transform groundCheckRight;
 
     public Rigidbody2D rb;
     private Vector3 velocity = Vector3.zero;
@@ -21,9 +26,11 @@ public class ControllerPlayer : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        isGrounded = Physics2D.OverlapArea(groundCheckLeft.position, groundCheckLeft.position);
+
         float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             isJumping = true;
         }
