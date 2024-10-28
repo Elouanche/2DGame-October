@@ -11,39 +11,39 @@ public class ControllerPlayer : MonoBehaviour
     private bool isJumping;
     private bool isGrounded;
 
-    public Transform groundCheckLeft;
-    public Transform groundCheckRight;
+    public Transform groundCheck;
+    public float groundCheckRadius;
+    public LayerMask collisionLayers;
 
     public Rigidbody2D rb;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
 
     private Vector3 velocity = Vector3.zero;
-
+    private float horizontalMovement;
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-        
-    }
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, collisionLayers);
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        isGrounded = Physics2D.OverlapArea(groundCheckLeft.position, groundCheckLeft.position);
-
-        float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.fixedDeltaTime;
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             isJumping = true;
         }
 
-        MovePlayer(horizontalMovement);
 
         Flip(rb.velocity.x);
 
         float characterVelocity = Mathf.Abs(rb.velocity.x);
         animator.SetFloat("Speed", characterVelocity);
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        MovePlayer(horizontalMovement);
     }
 
     void MovePlayer(float _horizontalMovement)
