@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDie : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class PlayerDie : MonoBehaviour
     public void Die()
     {
         if (isDead) return; 
+       
         isDead = true;
 
         GetComponent<ControllerPlayer>().enabled = false;
@@ -19,7 +22,7 @@ public class PlayerDie : MonoBehaviour
         rb.constraints = RigidbodyConstraints2D.FreezeRotation; 
         rb.AddForce(Vector2.up * 3, ForceMode2D.Impulse); 
 
-        deathThresholdY = transform.position.y - 15f;
+        deathThresholdY = transform.position.y - 5f;
 
         Collider2D[] colliders = GetComponents<Collider2D>();
         foreach (Collider2D collider in colliders)
@@ -32,6 +35,7 @@ public class PlayerDie : MonoBehaviour
     {
         if (isDead && transform.position.y <= deathThresholdY)
         {
+            SceneManager.LoadScene("Death Screen");
             Destroy(gameObject); 
         }
     }
