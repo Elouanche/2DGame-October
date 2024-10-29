@@ -1332,6 +1332,7 @@ GameObject:
   - component: {fileID: 1035980830}
   - component: {fileID: 1035980831}
   - component: {fileID: 1035980832}
+  - component: {fileID: 1035980833}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -1448,11 +1449,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 250
   jumpForce: 250
-  groundCheck: {fileID: 923810889}
-  groundCheckRadius: 0.2
-  collisionLayers:
-    serializedVersion: 2
-    m_Bits: 1
+  groundCheckLeft: {fileID: 0}
+  groundCheckRight: {fileID: 0}
   rb: {fileID: 1035980823}
   animator: {fileID: 1035980828}
   spriteRenderer: {fileID: 1035980824}
@@ -1516,7 +1514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 825579b3573b2604a9cba7c5747f2573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDead: 0
 --- !u!70 &1035980832
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1552,6 +1549,25 @@ CapsuleCollider2D:
   m_Offset: {x: -0.016260743, y: -0.108070135}
   m_Size: {x: 0.7630584, y: 0.7887163}
   m_Direction: 0
+--- !u!114 &1035980833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035980822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff42bbc6b463284cbafd45bef36495e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  jumpForce: 0
+  groundCheckLeft: {fileID: 0}
+  groundCheckRight: {fileID: 0}
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!1 &1036605452
 GameObject:
   m_ObjectHideFlags: 0
@@ -4807,7 +4823,7 @@ SpriteRenderer:
   m_Size: {x: 0.8888889, y: 0.8888889}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1836668852
