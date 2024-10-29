@@ -79,6 +79,9 @@ Voici quelques idées d’améliorations pour enrichir le jeu :
 - Optimiser la barre de vie avec des animations et des effets visuels.
 
 ## 7. Captures d'Écran
+![Menu](<screenshots/menu projet2D.png>)
+![Image de gamplay](<screenshots/menu projet2D.png>)
+![Image de gamplay](<screenshots/gameplay2 projet 2d.png>)
 
 ## 8. Remerciements
 
