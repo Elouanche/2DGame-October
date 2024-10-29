@@ -80,8 +80,9 @@ Voici quelques idées d’améliorations pour enrichir le jeu :
 
 ## 7. Captures d'Écran
 ![Menu](<screenshots/menu projet2D.png>)
-![Image de gamplay](<screenshots/menu projet2D.png>)
+![Image de gamplay](<screenshots/capture gameplay projet2D.png>)
 ![Image de gamplay](<screenshots/gameplay2 projet 2d.png>)
+
 
 ## 8. Remerciements
 
