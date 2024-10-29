@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 367882595}
   m_Layer: 0
   m_Name: Off (2)
-  m_TagString: Spike
+  m_TagString: Saw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1085,7 +1085,7 @@ GameObject:
   - component: {fileID: 835693480}
   m_Layer: 0
   m_Name: Off (3)
-  m_TagString: Spike
+  m_TagString: Saw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1406,7 +1406,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_Sprite: {fileID: -6367560908665664636, guid: c013a08c8296056409d8afe8795fa485, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1447,7 +1447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 250
-  jumpForce: 350
+  jumpForce: 250
   groundCheck: {fileID: 923810889}
   groundCheckRadius: 0.2
   collisionLayers:
@@ -1516,6 +1516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 825579b3573b2604a9cba7c5747f2573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDead: 0
 --- !u!70 &1035980832
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1566,7 +1567,7 @@ GameObject:
   - component: {fileID: 1036605453}
   m_Layer: 0
   m_Name: Off (1)
-  m_TagString: Spike
+  m_TagString: Saw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1736,7 +1737,7 @@ GameObject:
   - component: {fileID: 1050008814}
   m_Layer: 0
   m_Name: Off (4)
-  m_TagString: Spike
+  m_TagString: Saw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4526,7 +4527,7 @@ GameObject:
   - component: {fileID: 1436416113}
   m_Layer: 0
   m_Name: Off
-  m_TagString: Spike
+  m_TagString: Saw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

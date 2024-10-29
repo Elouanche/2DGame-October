@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
@@ -8,9 +7,20 @@ public class CameraFollow : MonoBehaviour
     public Vector3 posOffset;
 
     private Vector3 velocity;
+    private PlayerDie playerDie;
+
+    void Start()
+    {
+        playerDie = player.GetComponent<PlayerDie>();
+    }
 
     void Update()
     {
-        transform.position = Vector3.SmoothDamp(transform.position, player.transform.position + posOffset, ref velocity, timeOffset);   
+        if (playerDie == null || playerDie.isDead)
+        {
+            return; 
+        }
+
+        transform.position = Vector3.SmoothDamp(transform.position, player.transform.position + posOffset, ref velocity, timeOffset);
     }
 }

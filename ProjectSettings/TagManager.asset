@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Spike
   - SpawnPoint
+  - Saw
   layers:
   - Default
   - TransparentFX
