@@ -43,7 +43,7 @@ Les objectifs principaux du projet étaient les suivants :
 - **Objectif principal** : Développer un niveau fonctionnel avec les bases d’un jeu de plateforme en 2D
 - **Fonctionnalités incluses** :
     - Déplacement et saut du personnage dans un environnement en 2D.
-    - Mort du personnage et réapparition au dernier checkpoint.
+    - Mort du personnage et réapparition du personnage.
     - Écran de mort et barre de vie.
 
 ## 3. Stack Technique
