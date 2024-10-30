@@ -1774,9 +1774,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.010893285}
+  m_Offset: {x: 0.019057631, y: 0.005782604}
   serializedVersion: 2
-  m_Radius: 0.5828567
+  m_Radius: 0.47089052
 --- !u!50 &1050008815
 Rigidbody2D:
   serializedVersion: 4
@@ -4635,7 +4635,7 @@ GameObject:
   - component: {fileID: 1436416115}
   - component: {fileID: 1436416114}
   - component: {fileID: 1436416113}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Off
   m_TagString: Saw
   m_Icon: {fileID: 0}
@@ -4674,9 +4674,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.010893285}
+  m_Offset: {x: 0.008097649, y: 0.019244373}
   serializedVersion: 2
-  m_Radius: 0.5828567
+  m_Radius: 0.47534293
 --- !u!50 &1436416114
 Rigidbody2D:
   serializedVersion: 4
