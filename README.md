@@ -1,89 +1,86 @@
-# 2DGame-October 
+# 2DGame-October - Documentation
 
 ## Introduction
 
-Bienvenue dans notre projet de jeu 2D d'octobre !  
-Ce projet a été créé comme un exercice d'apprentissage pour explorer Unity et renforcer nos compétences en C# en développant un jeu jouable.  
+Welcome to our **October 2D Game** project!  
+This project was developed as a learning exercise to explore **Unity** and enhance our skills in **C#** by creating a playable game.
 
-## Prérequis
+## Authors
 
-Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur votre système :
+This project was developed by:
+- **Elouan Chedalleux**
+- **Nathan Walter**
 
-- **Unity** : version 2022.3.39f1 ou supérieure.
+## Table of Contents
 
-# 2DGame-October - Documentation
-
-Ce projet a été réalisé en binôme par :
-
-Elouan Chedalleux et Nathan Walter
-
-## Sommaire
-1. [Rappel du Projet](#1-rappel-du-projet)  
-2. [Cadre de Développement](#2-cadre-de-développement)  
-3. [Stack Technique](#3-stack-technique)  
+1. [Project Overview](#1-project-overview)  
+2. [Development Framework](#2-development-framework)  
+3. [Tech Stack](#3-tech-stack)  
 4. [Installation](#4-installation)  
-5. [Utilisation](#5-utilisation)  
-6. [Axes d'Améliorations](#6-axes-daméliorations)  
-7. [Captures d'Écran](#7-captures-décran)  
-8. [Remerciements](#8-remerciements)  
+5. [Usage](#5-usage)  
+6. [Future Improvements](#6-future-improvements)  
+7. [Screenshots](#7-screenshots)  
+8. [Acknowledgments](#8-acknowledgments)  
 
-## 1. Rappel du Projet
+## 1. Project Overview
 
-Le but de ce projet était de s'initier à Unity. Après avoir travaillé sur Unreal Engine et ses blueprints, nous souhaitions explorer un environnement plus concret et accessible, soutenu par une communauté active.  
-Les objectifs principaux du projet étaient les suivants :
+The goal of this project was to get familiar with **Unity**. After working with **Unreal Engine** and its Blueprint system, we wanted to explore a more hands-on and accessible environment supported by an active community.
 
-- Créer un niveau jouable avec un menu principal.
-- Développer un personnage capable de se déplacer, sauter, mourir et réapparaître à des checkpoints.
-- Intégrer une barre de vie et un écran de mort pour enrichir l'expérience de jeu.
+### Main objectives:
+- Develop a playable **2D platformer level** with a **main menu**.
+- Implement a **character controller** with movement, jumping, death, and respawn at checkpoints.
+- Integrate a **health bar** and a **death screen** to enhance the gameplay experience.
 
-## 2. Cadre de Développement
+## 2. Development Framework
 
-- **Niveau d'études** : Deuxième année de Bachelor en Informatique
-- **Durée du projet** : 1 mois
-- **Objectif principal** : Développer un niveau fonctionnel avec les bases d’un jeu de plateforme en 2D
-- **Fonctionnalités incluses** :
-    - Déplacement et saut du personnage dans un environnement en 2D.
-    - Mort du personnage et réapparition du personnage.
-    - Écran de mort et barre de vie.
+- **Education Level**: Second-year **Bachelor’s degree in Computer Science**.
+- **Project Duration**: 1 month.
+- **Main Goal**: Build a functional **2D platformer level** with core gameplay mechanics.
+- **Implemented Features**:
+  - Character movement and jumping in a 2D environment.
+  - Character death and respawn system.
+  - Death screen and health bar mechanics.
 
-## 3. Stack Technique
+## 3. Tech Stack
 
-- **Langage principal** : C# 
-- **Moteur de jeu** : Unity (2022.3.39f1)
+- **Programming Language**: C#
+- **Game Engine**: Unity (version **2022.3.39f1**)
 
 ## 4. Installation
 
-Pour installer et exécuter ce projet en local, suivez les étapes suivantes :
+To install and run this project locally, follow these steps:
 
-1. Clonez le dépôt GitHub sur votre machine :
-   ```
+1. Clone the GitHub repository to your machine:
+   ```bash
    git clone https://github.com/Elouanche/2DGame-October.git
    ```
 
-2. Ouvrez le projet dans Unity (version 2022.3.39f1).
-3. Compilez et exécutez le jeu via Unity pour lancer le niveau.
+2. Open the project in **Unity** (**version 2022.3.39f1**).
+3. Build and run the game within Unity to launch the level.
 
-## 5. Utilisation
+## 5. Usage
 
-Une fois le projet exécuté, le jeu démarre automatiquement avec le menu principal. Les contrôles par défaut sont les suivants :
+Once the project is running, the game starts with the **main menu**. The default controls are:
 
-- **Déplacements** : Flèches directionnelles ou touches `Z`, `Q`, `S`, `D`
-- **Saut** : Barre d'espace
+- **Move**: Arrow keys or `W`, `A`, `S`, `D`
+- **Jump**: Spacebar
 
-## 6. Axes d'Améliorations
+## 6. Future Improvements
 
-Voici quelques idées d’améliorations pour enrichir le jeu :
+Here are some potential improvements to enhance the game:
 
-- Ajouter des ennemis (mobs) pour augmenter le défi.
-- Intégrer plusieurs niveaux et scénarios pour une expérience plus immersive.
-- Optimiser la barre de vie avec des animations et des effets visuels.
+- **Add enemies (AI-controlled mobs)** to increase challenge.
+- **Introduce multiple levels and scenarios** for a more immersive experience.
+- **Optimize the health bar** with animations and visual effects.
+- **Enhance level design** with obstacles and interactive elements.
 
-## 7. Captures d'Écran
-![Menu](<screenshots/menu projet2D.png>)
-![Image de gamplay](<screenshots/capture gameplay projet2D.png>)
-![Image de gamplay](<screenshots/gameplay2 projet 2d.png>)
+## 7. Screenshots
 
+![Main Menu](<screenshots/menu_project2D.png>)
+![Gameplay Screenshot](<screenshots/capture_gameplay_project2D.png>)
+![Gameplay Screenshot 2](<screenshots/gameplay2_project2D.png>)
 
-## 8. Remerciements
+## 8. Acknowledgments
 
-Merci d’avoir pris le temps de découvrir notre jeu ! Nous espérons que vous apprécierez l’expérience autant que nous avons apprécié le développement.
+Thank you for taking the time to check out our game! We hope you enjoy the experience as much as we enjoyed developing it.
+
